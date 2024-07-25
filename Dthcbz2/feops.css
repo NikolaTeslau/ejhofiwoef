@@ -1,0 +1,127 @@
+body {
+    font-family: sans-serif;
+    background-color: #074740; /* Deep green */
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #074740; /* Darker green for header */
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo {
+    width: 350px; /* Adjust as needed */
+    margin-bottom: 30px;
+}
+/* img src="/foto/logo2.png" alt="ЭКЛИТ" class="logo-big"> */
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #074740; /* Even darker green for footer */
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+
+
+
+/*    */ 
+
+.solar-system-wrapper {
+    position: relative;
+    width: 100%; /* take up full width */
+    height: 100vh; /* take up full height */
+    perspective: 1000px; /* create a 3D perspective */
+  }
+  
+  .solar-system {
+    position: absolute;
+    top: 10%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* adjust width to 80% of parent */
+    height: 80%; /* adjust height to 80% of parent */
+  }
+  
+  .sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%; /* adjust width to 10% of parent */
+    height: 10%; /* adjust height to 10% of parent */
+    background-color: #ffcc0000; /* sun color */
+    border-radius: 50%;
+  }
+  
+  .planet-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: orbit 20s linear infinite;
+  }
+  
+  .rotating-image {
+    position: relative;
+    width: 20%; /* adjust width to 20% of parent */
+    height: 20%; /* adjust height to 20% of parent */
+    animation: spin 8s linear infinite;
+  }
+  
+  @keyframes orbit {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  /*  */

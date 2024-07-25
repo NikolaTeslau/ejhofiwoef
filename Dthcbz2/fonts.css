@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.text1 {
+    font-family: 'Lora', serif;
+  }
+
+
+
+/* Add a wrapper element to contain the solar system */
+.solar-system-wrapper {
+    position: relative;
+    width: 100%; /* take up full width */
+    height: 100vh; /* take up full height */
+    perspective: 1000px; /* create a 3D perspective */
+  }
+  
+  .solar-system {
+    position: absolute;
+    top: 10%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* adjust width to 80% of parent */
+    height: 80%; /* adjust height to 80% of parent */
+  }
+  
+  .sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%; /* adjust width to 10% of parent */
+    height: 10%; /* adjust height to 10% of parent */
+    background-color: #ffcc0000; /* sun color */
+    border-radius: 50%;
+  }
+  
+  .planet-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: orbit 20s linear infinite;
+  }
+  
+  .rotating-image {
+    position: relative;
+    width: 20%; /* adjust width to 20% of parent */
+    height: 20%; /* adjust height to 20% of parent */
+    animation: spin 8s linear infinite;
+  }
+  
+  @keyframes orbit {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Add media queries to adjust sizes for different screen sizes */
+  @media (max-width: 768px) {
+   .solar-system {
+      width: 60%;
+      height: 60%;
+    }
+   .sun {
+      width: 8%;
+      height: 8%;
+    }
+   .rotating-image {
+      width: 15%;
+      height: 15%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+   .solar-system {
+      width: 40%;
+      height: 40%;
+    }
+   .sun {
+      width: 6%;
+      height: 6%;
+    }
+   .rotating-image {
+      width: 10%;
+      height: 10%;
+    }
+  }
+
+

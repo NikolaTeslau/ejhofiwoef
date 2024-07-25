@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЭКЛИТ</title>
+    <link rel="stylesheet" href="feops.css">
+    <link rel="stylesheet" href="ffeops2.css">
+    <link rel="stylesheet" href="fonts.css">
+</head>
+
+
+
+
+
+
+
+
+
+
+
+<div class="holder ">
+  <div class="preloader"><div></div><div></div></div>
+</div>
+<style>
+.holder {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #EEEEEE; /*цвет фона*/
+  z-index: 99999;
+  transition: all 1s linear;
+}
+.unhold {
+  opacity: 0;
+pointer-events: none;
+  visibility: hidden;
+}
+.preloader {
+  position: absolute;
+  width: 10%;
+  height: 0%;
+  padding-bottom: 10%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.preloader div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  overflow: hidden;
+  animation: animatePreloader 1s infinite linear;
+  transform-origin: 50% 100%;
+}
+.preloader div:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  border: 5px solid #074740; /*толщина и цвет колец*/
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.preloader div:nth-child(2) {
+  width: 60%;
+  height: 60%;
+  top: 20%;
+  animation: animatePreloader 0.5s infinite linear;
+}
+@keyframes animatePreloader {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotateZ(360deg);
+  }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+document.querySelector(".holder").classList.add("unhold");
+    }, 1000);
+})
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="solar-system">
+  <div class="sun"></div>
+  <div class="planet-container">
+    <img src="/Dthcbz2/foto/star.png" class="rotating-image">
+  </div>
+</div>
+
+
+<body>
+    <header>
+        <div class="container">
+            <img src="/Dthcbz2/foto/logo2.png" alt="ЭКЛИТ" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Расписание</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1>ВАШ ЦЕНТР ЭСТЕТИКИ</h1>
+            <p>Ведущий российский центр обучения специалистов в области эстетической медицины и врачебной косметологии.</p>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 ЭКЛИТ</p>
+        </div>
+    </footer>
+    <div class="block-wraper">
+      
+      <div class="left-wraper">
+        <img src="/Dthcbz2/foto/sign.png" />
+        <div class="text-content">
+          <div class="text1">Мы верим, что красота начинается изнутри. 
+            Поэтому мы используем только натуральные ингредиенты и инновационные технологии, 
+            чтобы создать продукты, которые не только ухаживают за вашей кожей,
+             но и вдохновляют вас на новые свершения. </div> 
+
+            <div class="text1" >Натуральные ингредиенты: 
+              мы используем только лучшие и безопасные ингредиенты,
+               чтобы убедиться, что наша косметика подходит для всех 
+               типов кожи.</div>
+              <div class="text1" >Инновационные технологии: 
+                мы постоянно совершенствуем наши продукты, 
+                чтобы они были эффективными и удобными в использовании.<br> </br>
+                
+                Экологическая ответственность: мы заботимся о нашей планете 
+                и используем экологически чистые материалы в нашей упаковке.<br> </br>
+                
+                <br> </br>
+                
+                Присоединяйтесь к нам!
+
+Откройте секрет вашей красоты с нашей косметикой! Посетите наш сайт или магазин и откройте для себя мир натуральной красоты!  </div>
+
+        </div>
+      </div>
+      <div class="right-wraper">
+        <div class="left-img-wraper"> 
+          <div class="foto1"> <img src="/Dthcbz2/foto/1fotohaha.png" style="width: 100%; height: 100%;" /> </div>
+          <div class="foto2"> <img src="/Dthcbz2/foto/wqd2.jpg"  style="width: 100%; height: 100%;" /> </div>
+        </div>
+        
+      </div>
+
+    </div>
+</body>
+</body>
+
+
+
+
+</html>
